@@ -28,76 +28,64 @@ exercises: 0
 Уявіть наступну задачу:
 для бібліографічного пошуку вам необхідно скопіювати третій рядок з тисячі вхідних файлів з тисячі
 різних директорій та вставити усе це в один файл.
-Using a GUI, you would not only be clicking at your desk for several hours,
-but you could potentially also commit an error in the process of completing this repetitive task.
+Використовуючи графічний інтерфейс, ви б не тільки клацали мишею на свому робочому місці декілька годин,
+але й могли б потенційно також внести помилку в процесі виконання монотонної задачі.
 Саме тут ми й скористаємося перевагами терміналу Unix.
-The Unix shell is both a **command-line interface** (CLI) and a scripting language,
-allowing such repetitive tasks to be done automatically and fast.
-With the proper commands, the shell can repeat tasks with or without some modification
-as many times as we want.
+Термінал Unix - це одночасно **інтерфейс командного рядка** (англ. "Command-Line Interface", CLI) та скриптова мова програмування,
+яка дозволяє виконувати подібні повторювані задачі автоматично та швидко.
+За допомогою відповідних команд термінал може повторювати задачі із певними змінами або без них
+стільки разів, скільки ми бажаємо.
 З використанням терміналу приклад задачі з бібліографічним пошуком може бути вирішений за секунди.
 
 ### Термінал
 
 Термінал - це програма, де користувач може вводити команди.
-With the shell, it's possible to invoke complicated programs like climate modeling software
-or simple commands that create an empty directory with only one line of code.
+За допомогою терміналу можна запускати складні програми, такі як програмне забезпечення для моделювання клімату, або прості команди, які створюють пустий каталог, командами, які займають лише один рядок.
 Найбільш популярним терміналом є Bash (the Bourne Again SHell, який отримав таку назву, тому що був розроблений на основі терміналу, написаного Стівеном Борном).
-Bash is the default shell on most modern implementations of Unix and in most packages that provide
-Unix-like tools for Windows.
-Note that 'Git Bash' is a piece of software that enables Windows users to use a Bash like interface
-when interacting with Git.
+Bash є терміналом за замовчуванням у більшості сучасних реалізацій Unix та у більшості пакетів, які надають Unix-подібні інструменти для Windows.
+Зауважте, що 'Git Bash' — це частина програмного забезпечення, яка дозволяє користувачам Windows використовувати інтерфейс, подібний до Bash,
+при взаємодії з Git.
 
-Using the shell will take some effort and some time to learn.
+Щоб користуватися терміналом, потрібно докласти певних зусиль і витратити час на його вивчення.
 У той час як графічний інтерфейс надає вам можливість вибору, команди терміналу не надаються автоматично, тому вам доведеться вивчити кілька команд, як нову лексику у мові, яку ви вивчаєте.
-However, unlike a spoken language, a small number of "words" (i.e. commands) gets you a long way,
-and we'll cover those essential few today.
+Однак, на відміну від розмовної мови, невелика кількість "слів" (тобто команд) принесе вам неймовірну користь, і сьогодні ми розглянемо кілька найважливіших з них.
 
-Граматика терміналу дозволяє комбінувати наявні інструменти у потужні конвеєри та автоматично обробляти великі обсяги даних. Sequences of
-commands can be written into a _script_, improving the reproducibility of
-workflows.
+Граматика терміналу дозволяє комбінувати наявні інструменти у потужні конвеєри та автоматично обробляти великі обсяги даних. Послідовності команд можуть бути записані у _скрипт_, покращуючи відтворюваність послідовностей дій.
 
-In addition, the command line is often the easiest way to interact with remote machines
-and supercomputers.
-Familiarity with the shell is near essential to run a variety of specialized tools and resources
-including high-performance computing systems.
+Крім того, командний рядок часто є найпростішим способом взаємодії з віддаленими машинами та суперкомп'ютерами.
+Ознайомлення з терміналом є майже необхідним для запуску різноманітних спеціалізованих інструментів і ресурсів, у тому числі надпродуктивних обчислювальних систем.
 Оскільки кластери та хмарні обчислювальні системи стають все більш популярними для обробки наукових даних, вміння взаємодіяти з терміналом стає необхідною навичкою.
-We can build on the command-line skills covered here
-to tackle a wide range of scientific questions and computational challenges.
+Ми можемо розвивати навички роботи з командним рядком, описані тут, для вирішення широкого спектра наукових питань і обчислювальних проблем.
 
 Отже, почнемо.
 
-When the shell is first opened, you are presented with a **prompt**,
-indicating that the shell is waiting for input.
+Коли термінал тільки відкрито, вам пропонується запит (англ. **prompt**), яке вказує на те, що термінал очікує на введення команд.
 
 ```bash
 $
 ```
 
-The shell typically uses `$ ` as the prompt, but may use a different symbol.
-In the examples for this lesson, we'll show the prompt as `$ `.
-Most importantly, _do not type the prompt_ when typing commands.
+Термінал зазвичай використовує символ `$ ` як запрошення, але може використовувати й інші символи.
+У прикладах до цього уроку ми використовуватимемо запрошення `$ `.
+Найважливіше:
+під час введення команд _запрошення вводити не треба_.
 Треба вводити тільки команди, що йдуть за ним.
 Це правило діє як на цих уроках, так і на уроках з інших джерел.
-Also note that after you type a command, you have to press the <kbd>Enter</kbd> key to execute it.
+Також зауважте, що після введення команди, вам потрібно натиснути клавішу <kbd>Enter</kbd> для її виконання.
 
-The prompt is followed by a **text cursor**, a character that indicates the position where your
-typing will appear.
+За запрошенням йде **текстовий курсор** - символ, який позначає позицію, де ви будете вводити текст.
 Курсор зазвичай блимає або є суцільним блоком, але він також може бути підкресленням або вертикальною рискою.
 Ви могли його бачити, наприклад, в текстових редакторах.
 
-Зверніть увагу, що ваш запит може виглядати дещо інакше. Зокрема, більшість популярних середовищ оболонки за замовчуванням вказують ваше ім'я користувача та ім'я хоста перед '$'. Такий запит може виглядати так, наприклад:
+Зверніть увагу, що ваше запрошення може виглядати дещо інакше. Зокрема, більшість популярних середовищ оболонки за замовчуванням вказують ваше ім'я користувача та ім'я хоста перед '$'. Таке запрошення може виглядати, наприклад, так:
 
 ```bash
 nelle@localhost $
 ```
 
-The prompt might even include more than this. Do not worry if your prompt is not
-just a short `$ `. This lesson does not depend on this additional information and it
-should also not get in your way. The only important item to focus on is the `$ `
-character itself and we will see later why.
+Запрошення може містити навіть ще більше інформації. Не хвилюйтеся, якщо ваше запрошення - це не просто коротке '$'. Цей урок не залежить від цієї додаткової інформації, та вона також не повинна вам заважати. Єдиним важливим елементом, на якому слід зосередитися, є сам символ `$`, і ми побачимо пізніше, чому.
 
-So let's try our first command, `ls`, which is short for listing.
+Отже, спробуймо нашу першу команду, `ls` (походить від англійського слова "listing").
 Ця команда покаже зміст поточного каталогу:
 
 ```bash
@@ -113,8 +101,7 @@ Documents   Library     Music       Public
 
 ## Команду не знайдено
 
-If the shell can't find a program whose name is the command you typed, it
-will print an error message such as:
+Якщо термінал не може знайти програму, назву якої ви ввели, він виведе на екран наступне повідомлення про помилку:
 
 ```bash
 $ ks
@@ -124,39 +111,25 @@ $ ks
 ks: command not found
 ```
 
-This might happen if the command was mis-typed or if the program corresponding to that command
-is not installed.
+Це може трапитися, якщо при наборі команди була допущена помилка або якщо програма, що відповідає набраній команді, не встановлена.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Конвеєр Неллі: Типова Проблема
 
-Nelle Nemo, a marine biologist,
-has just returned from a six-month survey of the
-[North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre),
-where she has been sampling gelatinous marine life in the
-[Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch).
-She has 1520 samples that she's run through an assay machine to measure the relative abundance
-of 300 proteins.
+Неллі Немо (Nelle Nemo), морський біолог, щойно повернулась із шестимісячного дослідження [Північного тихоокеанського кругообігу (North Pacific Gyre)](https://uk.wikipedia.org/wiki/Північнотихоокеанська_течія), де вона збирала зразки драглистих морських організмів у [Великій тихоокеанській сміттєвій плямі](https://uk.wikipedia.org/wiki/Велика_тихоокеанська_сміттєва_пляма).
+Вона має 1520 зразків, які вона пропускає через аналізатор, щоб виміряти відносну кількість 300 білків.
 Їй потрібно запустити ці 1520 файлів через уявну програму `goostats.sh`, яку вона успадкувала.
-In addition to this huge task, she has to write up results by the end of the month, so her paper
-can appear in a special issue of _Aquatic Goo Letters_.
+Окрім цього величезного завдання, вона має написати результати до кінця місяця, щоб її робота могла з’явитися у спеціальному випуску _Aquatic Goo Letters_.
 
-If Nelle chooses to run `goostats.sh` by hand using a GUI,
-she'll have to select and open a file 1520 times.
+Якщо Неллі вирішить запустити `goostats.sh` вручну за допомогою графічного інтерфейсу, їй доведеться вибирати та відкривати файли 1520 разів.
 Якщо обробка одного файлу програмою `goostats.sh` триватиме 30 секунд, загальний процес вимагатиме більше ніж 12 годин уваги Неллі.
-With the shell, Nelle can instead assign her computer this mundane task while she focuses
-her attention on writing her paper.
+За допомогою терміналу, Неллі може замість цього доручити своєму комп’ютеру цю рутинну роботу в той час, коли вона фокусує свою увагу на написанні статті.
 
 У наступних кількох уроках будуть розглянуті шляхи, яким чином Неллі може цього досягти.
-More specifically,
-the lessons explain how she can use a command shell to run the `goostats.sh` program,
-using loops to automate the repetitive steps of entering file names,
-so that her computer can work while she writes her paper.
+Зокрема, на уроках пояснюється, як вона може використовувати термінал для запуску програми `goostats.sh`, використовуючи цикли для автоматизації повторюваних кроків введення імен файлів, щоб її комп'ютер міг працювати, поки вона пише свою наукову роботу.
 
-As a bonus,
-once she has put a processing pipeline together,
-she will be able to use it again whenever she collects more data.
+Як бонус, після того, як вона створить конвеєр, вона зможе використовувати його повторно, коли вона збере більше даних.
 
 Для того, щоб досягти своєї мети, Неллі необхідно знати, як:
 
