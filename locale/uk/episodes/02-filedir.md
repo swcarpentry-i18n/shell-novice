@@ -6,11 +6,11 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain the similarities and differences between a file and a directory.
+- Пояснити подібності та відмінності між файлом і каталогом.
 - Перетворити абсолютний шлях у відносний і навпаки.
-- Construct absolute and relative paths that identify specific files and directories.
-- Use options and arguments to change the behaviour of a shell command.
-- Demonstrate the use of tab completion and explain its advantages.
+- Створити абсолютні та відносні шляхи, які ідентифікують певні файли та каталоги.
+- Використати опції та аргументи для зміни поведінки команд у терміналі.
+- Продемонструвати використання табуляції для автоматичного доповнення та пояснити його переваги.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -32,18 +32,16 @@ structure while they're using terminal to navigate the system.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-The part of the operating system responsible for managing files and directories
-is called the **file system**.
+Частина операційної системи, яка відповідає за роботу з файлами та каталогами, називається **файловою системою**.
 It organizes our data into files,
 which hold information,
 and directories (also called 'folders'),
 which hold files or other directories.
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories.
-To start exploring them, we'll go to our open shell window.
+Для створення, перевірки, перейменування та видалення файлів і каталогів зазвичай використовується декілька команд.
+Щоб розглянути їх, перейдемо до нашого відкритого вікна терміналу.
 
-First, let's find out where we are by running a command called `pwd`
-(which stands for 'print working directory'). Directories are like _places_ — at any time
+По-перше, дізнаймося, де ми знаходимося, запустивши команду `pwd` (англ. 'print working directory' - надрукувати робочий каталог). Directories are like _places_ — at any time
 while we are using the shell, we are in exactly one place called
 our **current working directory**. Commands mostly read and write files in the
 current working directory, i.e. 'here', so knowing where you are before running
@@ -57,18 +55,14 @@ $ pwd
 /Users/nelle
 ```
 
-Here,
-the computer's response is `/Users/nelle`,
-which is Nelle's **home directory**:
+У наведеному прикладі комп'ютер відповів `/Users/nelle`, що є **домашнім каталогом** Неллі:
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Варіації домашнього каталогу
 
-Розташування домашньої директорії виглядає по-різному в різних операційних системах.
-On Linux, it may look like `/home/nelle`,
-and on Windows, it will be similar to `C:\Documents and Settings\nelle` or
-`C:\Users\nelle`.
+Розташування домашнього каталогу виглядає по-різному в різних операційних системах.
+В Linux воно може виглядати як `/home/nelle`, а у Windows воно буде схоже на `C:\\Documents and Settings\\nelle` чи `C:\\Users\\nelle`.
 (Зауважте, що воно може виглядати дещо інакше для різних версій Windows.)
 In future examples, we've used Mac output as the default - Linux and Windows
 output may differ slightly but should be generally similar.
