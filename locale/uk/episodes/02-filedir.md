@@ -75,14 +75,15 @@ on the `cd` command.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-To understand what a 'home directory' is,
-let's have a look at how the file system as a whole is organized.  Для цього прикладу ми проілюструємо файлову систему на комп’ютері нашої вченої Неллі.  After this
+Для того, щоб зрозуміти, що таке 'домашній каталог', розглянемо як організована файлова система в цілому.  For the
+sake of this example, we'll be
+illustrating the filesystem on our scientist Nelle's computer.  After this
 illustration, you'll be learning commands to explore your own filesystem,
 which will be constructed in a similar way, but not be exactly identical.
 
 На комп’ютері Неллі файлова система виглядає так:
 
-![](fig/filesystem.svg){alt='The file system is made up of a root directory that contains sub-directories titled bin, data, users, and tmp'}
+![](fig/filesystem.svg){alt='Файлова система складається з кореневого каталогу, який містить підкаталоги з назвами bin, data, users та tmp'}
 
 Файлова система виглядає як перевернуте дерево.
 Найвищим каталогом є **кореневий каталог**, який містить усе інше.
