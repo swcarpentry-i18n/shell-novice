@@ -62,7 +62,7 @@ $ pwd
 ## Варіації домашнього каталогу
 
 Розташування домашнього каталогу виглядає по-різному в різних операційних системах.
-В Linux воно може виглядати як `/home/nelle`, а у Windows воно буде схоже на `C:\\Documents and Settings\\nelle` чи `C:\\Users\\nelle`.
+В Linux воно може виглядати як `/home/nelle`, а у Windows воно буде схоже на `C:\Documents and Settings\nelle` чи `C:\Users\nelle`.
 (Зауважте, що воно може виглядати дещо інакше для різних версій Windows.)
 In future examples, we've used Mac output as the default - Linux and Windows
 output may differ slightly but should be generally similar.
