@@ -93,17 +93,14 @@ this character is the leading slash in `/Users/nelle`.
 Усередині цього каталогу є кілька інших каталогів: `bin` (в якому зберігаються певні вбудовані програми), `data` (для різноманітних файлів даних), `Users` (де знаходяться особисті директорії користувачів), `tmp` (для файлів тимчасового зберігання) та інші.
 
 Ми знаємо, що наш поточний робочий каталог `/Users/nelle` зберігається всередині каталогу `/Users`, тому що `/Users` є першою частиною його імені.
-Similarly,
-we know that `/Users` is stored inside the root directory `/`
-because its name begins with `/`.
+Відповідно, нам відомо, що каталог `/Users` зберігається всередині кореневої директорії `/`, бо його ім'я розпочинається з символу `/`.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Символи скісної риски
 
 Зверніть увагу, що символ `/` має два значення.
-Коли він з’являється на початку назви файлу чи каталогу, це посилання на кореневу директорію. When it appears _inside_ a path,
-it's just a separator.
+Коли він з’являється на початку назви файлу чи каталогу, це посилання на кореневу директорію. Коли він використовується _всередині_ шляху, це лише роздільник.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -114,14 +111,11 @@ her colleagues _imhotep_ and _larry_.
 ![](fig/home-directories.svg){alt='Як і інші каталоги, домашні каталоги є підкаталогами
 "/Users", наприклад "/Users/imhotep", "/Users/larry" або "/Users/nelle"'}
 
-The user _imhotep_'s files are stored in `/Users/imhotep`,
-user _larry_'s in `/Users/larry`,
-and Nelle's in `/Users/nelle`. Оскільки саме Неллі є користувачем у наших прикладах, тому ми отримуємо `/Users/nelle` як наш домашній каталог.
+Файли користувача _imhotep_ зберігаються в директорії `/Users/imhotep`, користувача _larry_ - в `/Users/larry`, і Неллі - в `/Users/nelle`. Оскільки саме Неллі є користувачем у наших прикладах, тому ми отримуємо `/Users/nelle` як наш домашній каталог.
 Typically, when you open a new command prompt, you will be in
 your home directory to start.
 
-Now let's learn the command that will let us see the contents of our
-own filesystem.  We can see what's in our home directory by running `ls`:
+Тепер розглянемо команду, яка дозволить нам бачити вміст нашої власної файлової системи.  Ми можемо побачити, що знаходиться у нашому домашньому каталозі, запустивши `ls`:
 
 ```bash
 $ ls
@@ -135,17 +129,13 @@ Desktop      Downloads    Movies       Pictures
 (Знову ж таки, ваші результати можуть дещо відрізнятися залежно від вашої операційної системи та того, як ви налаштували свою файлову систему.)
 
 `ls` друкує назви файлів і каталогів у поточному каталозі.
-We can make its output more comprehensible by using the `-F` **option**
-which tells `ls` to classify the output
-by adding a marker to file and directory names to indicate what they are:
+Ми можемо зробити його вивід більш зрозумілим за допомогою **опції** `-F`, яка вказує `ls` класифікувати вивід, додаючи маркер до імен файлів і каталогів, щоб вказати, що вони собою являють:
 
-- символ `/` наприкінці назви вказує на те, що це каталог
-- `@` indicates a link
-- `*` indicates an executable
+- a trailing `/` indicates that this is a directory
+- символ `@` вказує на посилання
+- символ `*` вказує на виконуваний файл
 
-Depending on your shell's default settings,
-the shell might also use colors to indicate whether each entry is a file or
-directory.
+Залежно від налаштувань терміналу за замовчуванням, він також може використовувати кольори для позначення файлів та каталогів, щоб краще їх розрізняти.
 
 ```bash
 $ ls -F
@@ -156,14 +146,13 @@ Applications/ Documents/    Library/      Music/        Public/
 Desktop/      Downloads/    Movies/       Pictures/
 ```
 
-Here,
-we can see that the home directory contains only **sub-directories**.
+В наведеному прикладі ми бачимо, що наш домашній каталог містить лише **підкаталоги**.
 Any names in the output that don't have a classification symbol
 are **files** in the current working directory.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Очищення терміналу
+## Clearing your terminal
 
 Якщо екран стає занадто захаращеним, ви можете очистити термінал за допомогою команди `clear`. You can still access previous commands using <kbd>↑</kbd>
 and <kbd>↓</kbd> to move line-by-line, or by scrolling in your terminal.
