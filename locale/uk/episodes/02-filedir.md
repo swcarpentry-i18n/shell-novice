@@ -839,7 +839,7 @@ and we will see it in many other tools as we go on.
 - Directory names in a path are separated with `/` on Unix, but `\` on Windows.
 - Символ `/` сам по собі є кореневим каталогом усієї файлової системи.
 - Абсолютний шлях вказує на розташування від кореня файлової системи.
-- A relative path specifies a location starting from the current location.
+- Відносний шлях вказує на розташування, починаючи з поточного.
 - `.` on its own means 'the current directory'; `..` means 'the directory above the current one'.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
