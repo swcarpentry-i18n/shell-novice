@@ -26,9 +26,7 @@ exercises: 10
 
 Introducing and navigating the filesystem in the shell
 (covered in [Navigating Files and Directories](02-filedir.md) section)
-can be confusing. You may have both terminal and GUI file explorer
-open side by side so learners can see the content and file
-structure while they're using terminal to navigate the system.
+can be confusing. Ви можете відкрити термінал та графічний провідник файлів поруч, щоб учні могли бачити вміст і структуру файлів, коли вони використовують термінал для навігації системою.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -41,9 +39,7 @@ which hold files or other directories.
 Для створення, перевірки, перейменування та видалення файлів і каталогів зазвичай використовується декілька команд.
 Щоб розглянути їх, перейдемо до нашого відкритого вікна терміналу.
 
-По-перше, дізнаймося, де ми знаходимося, запустивши команду `pwd` (англ. 'print working directory' - надрукувати робочий каталог). Directories are like _places_ — at any time
-while we are using the shell, we are in exactly one place called
-our **current working directory**. Commands mostly read and write files in the
+По-перше, дізнаймося, де ми знаходимося, запустивши команду `pwd` (англ. 'print working directory' - надрукувати робочий каталог). Каталоги подібні до _місцезнаходження_ - у будь-який момент, коли ми використовуємо термінал, ми знаходимося в одному місці, яке називається **поточним робочим каталогом**. Commands mostly read and write files in the
 current working directory, i.e. 'here', so knowing where you are before running
 a command is important. Команда `pwd` покаже вам, де ви знаходитесь:
 
