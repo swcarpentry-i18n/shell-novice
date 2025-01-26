@@ -826,7 +826,7 @@ and we will see it in many other tools as we go on.
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Файлова система відповідає за керування інформацією на диску.
-- Information is stored in files, which are stored in directories (folders).
+- Інформація зберігається у файлах, які зберігаються в каталогах (теках).
 - Directories can also store other directories, which then form a directory tree.
 - Команда `pwd` виводить поточний робочий каталог користувача.
 - `ls [path]` prints a listing of a specific file or directory; `ls` on its own lists the current working directory.
