@@ -832,7 +832,7 @@ and we will see it in many other tools as we go on.
 - `ls [path]` prints a listing of a specific file or directory; `ls` on its own lists the current working directory.
 - Команда `cd [шлях]` змінює поточний робочий каталог.
 - Більшість команд приймають параметри, які починаються з одного символу `-`.
-- Directory names in a path are separated with `/` on Unix, but `\` on Windows.
+- Назви каталогів в шляху розділяються символами `/` в Unix, але `\\` в Windows.
 - Символ `/` сам по собі є кореневим каталогом усієї файлової системи.
 - Абсолютний шлях вказує на розташування від кореня файлової системи.
 - Відносний шлях вказує на розташування, починаючи з поточного.
