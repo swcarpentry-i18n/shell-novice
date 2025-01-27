@@ -107,7 +107,9 @@ her colleagues _imhotep_ and _larry_.
 ![](fig/home-directories.svg){alt='Як і інші каталоги, домашні каталоги є підкаталогами
 "/Users", наприклад "/Users/imhotep", "/Users/larry" або "/Users/nelle"'}
 
-Файли користувача _imhotep_ зберігаються в директорії `/Users/imhotep`, користувача _larry_ - в `/Users/larry`, і Неллі - в `/Users/nelle`. Оскільки саме Неллі є користувачем у наших прикладах, тому ми отримуємо `/Users/nelle` як наш домашній каталог.
+The user _imhotep_'s files are stored in `/Users/imhotep`,
+user _larry_'s in `/Users/larry`,
+and Nelle's in `/Users/nelle`. Оскільки саме Неллі є користувачем у наших прикладах, тому ми отримуємо `/Users/nelle` як наш домашній каталог.
 Typically, when you open a new command prompt, you will be in
 your home directory to start.
 
@@ -150,16 +152,13 @@ are **files** in the current working directory.
 
 ## Clearing your terminal
 
-Якщо екран стає занадто захаращеним, ви можете очистити термінал за допомогою команди `clear`. You can still access previous commands using <kbd>↑</kbd>
-and <kbd>↓</kbd> to move line-by-line, or by scrolling in your terminal.
+Якщо екран стає занадто захаращеним, ви можете очистити термінал за допомогою команди `clear`. Ви все ще можете отримати доступ до попередніх команд за допомогою клавіш <kbd>↑</kbd> та <kbd>↓</kbd> для переміщення по рядках, або за допомогою прокрутки у вашому терміналі.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Отримання допомоги
 
-`ls` has lots of other **options**. There are two common ways to find out how
-to use a command and what options it accepts ---
-**depending on your environment, you might find that only one of these ways works:**
+У `ls` є багато інших опцій. Існує два поширених способи дізнатися, як використовувати команду і які параметри вона приймає --- **залежно від вашого середовища, ви можете виявити, що працює лише один із цих способів:**
 
 1. Ми можемо передати команді опцію `--help` (доступну в Linux і Git Bash), наприклад:
 
@@ -173,24 +172,20 @@ $ ls --help
 $ man ls
 ```
 
-We'll describe both ways next.
+Далі ми роздивимось обидва способи.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Довідка для вбудованих команд
 
-Деякі команди вбудовано в оболонку Bash, а не існують як окремі програми у файловій системі. One example is the `cd` (change directory) command.
-If you get a message like `No manual entry for cd`, try `help cd` instead. The
-`help` command is how you get usage information for
-[Bash built-ins](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html).
+Деякі команди вбудовано в оболонку Bash, а не існують як окремі програми у файловій системі. Одним із прикладів є команда `cd` (зміна каталогу).
+Якщо після команди `man cd` ви отримуєте повідомлення на кшталт `No manual entry for cd`, спробуйте натомість `help cd`. За допомогою команди `help` ви можете отримати інформацію про використання [вбудованих команд Bash](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 #### Опція \`--help'
 
-Most bash commands and programs that people have written to be
-run from within bash, support a `--help` option that displays more
-information on how to use the command or program.
+Більшість команд bash і програм, написаних людьми для запуску з bash, підтримують опцію `--help`, яка виводить додаткову інформацію про те, як користуватися відповідною командою або програмою.
 
 ```bash
 $ ls --help
@@ -226,14 +221,13 @@ Mandatory arguments to long options are mandatory for short options, too.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-### When to use short or long options
+### Коли використовувати короткі або довгі опції
 
-When options exist as both short and long options:
+Коли існують як короткі, так і довгі опції:
 
-- Use the short option when typing commands directly into the
-  shell to minimize keystrokes and get your task done faster.
+- Використовуйте коротку під час введення команд безпосередньо в термінал, щоб мінімізувати натискання клавіш і швидше виконувати завдання.
 - Use the long option in scripts to provide clarity.
-  Він буде прочитаний багато разів і надрукований один раз.
+  It will be read many times and typed once.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -241,8 +235,7 @@ When options exist as both short and long options:
 
 ## Непідтримувані параметри командного рядка
 
-If you try to use an option that is not supported, `ls` and other commands
-will usually print an error message similar to:
+Якщо ви спробуєте використати параметр, який не підтримується терміналом, `ls` та інші команди зазвичай виводитимуть повідомлення про помилку, схоже на:
 
 ```bash
 $ ls -j
@@ -257,7 +250,7 @@ Try 'ls --help' for more information.
 
 #### Команда `man`
 
-The other way to learn about `ls` is to type
+Інший спосіб дізнатися про `ls` - ввести
 
 ```bash
 $ man ls
@@ -266,13 +259,10 @@ $ man ls
 This command will turn your terminal into a page with a description
 of the `ls` command and its options.
 
-To navigate through the `man` pages,
-you may use <kbd>↑</kbd> and <kbd>↓</kbd> to move line-by-line,
-or try <kbd>b</kbd> and <kbd>Spacebar</kbd> to skip up and down by a full page.
-To search for a character or word in the `man` pages,
-use <kbd>/</kbd> followed by the character or word you are searching for.
+Для навігації сторінками `man` ви можете використовувати <kbd>↑</kbd> і <kbd>↓</kbd> для переміщення по рядках, або спробувати <kbd>b</kbd> і <kbd>Spacebar</kbd> для переходу вгору і вниз на цілу сторінку.
+Для пошуку символу або слова на сторінках `man`, використовуйте клавішу <kbd>/</kbd> та слідом введіть символ або слово, яке ви шукаєте.
 Іноді пошук може призвести до кількох результатів.
-If so, you can move between hits using <kbd>N</kbd> (for moving forward) and <kbd>Shift</kbd>\+<kbd>N</kbd> (for moving backward).
+У такому випадку ви можете переміщатися між результатами за допомогою клавіш <kbd>N</kbd> (для переходу вперед) та <kbd>Shift</kbd>\+<kbd>N</kbd> (для переходу назад).
 
 Щоб **вийти** зі сторінок `man`, натисніть <kbd>q</kbd>.
 
@@ -282,8 +272,7 @@ If so, you can move between hits using <kbd>N</kbd> (for moving forward) and <kb
 
 Of course, there is a third way to access help for commands:
 searching the internet via your web browser.
-When using internet search, including the phrase `unix man page` in your search
-query will help to find relevant results.
+Якщо ви скористаєтеся пошуком в Інтернеті, додання до запиту фрази `unix man page` дозволить отримати більш доречні результати.
 
 GNU provides links to its
 [manuals](https://www.gnu.org/manual/manual.html) including the
