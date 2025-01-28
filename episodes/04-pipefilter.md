@@ -6,16 +6,17 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Redirect a command's output to a file.
-- Construct command pipelines with two or more stages.
-- Explain what usually happens if a program or pipeline isn't given any input to process.
 - Explain the advantage of linking commands with pipes and filters.
+- Combine sequences of commands to get new output
+- Redirect a command's output to a file.
+- Explain what usually happens if a program or pipeline isn't given any input to process.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How can I combine existing commands to do new things?
+- How can I combine existing commands to produce a desired output?
+- How can I show only part of the output? 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -745,8 +746,8 @@ and *only* the processed data files?
 - `wc` counts lines, words, and characters in its inputs.
 - `cat` displays the contents of its inputs.
 - `sort` sorts its inputs.
-- `head` displays the first 10 lines of its input.
-- `tail` displays the last 10 lines of its input.
+- `head` displays the first 10 lines of its input by default without additional arguments.
+- `tail` displays the last 10 lines of its input by default without additional arguments.
 - `command > [file]` redirects a command's output to a file (overwriting any existing content).
 - `command >> [file]` appends a command's output to a file.
 - `[first] | [second]` is a pipeline: the output of the first command is used as the input to the second.
