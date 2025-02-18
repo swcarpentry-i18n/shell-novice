@@ -1,23 +1,23 @@
 ---
-title: Introducing the Shell
+title: Introducción al Shell
 teaching: 5
 exercises: 0
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how the shell relates to the keyboard, the screen, the operating system, and users' programs.
-- Explain when and why command-line interfaces should be used instead of graphical interfaces.
+- Explicar cómo se relaciona el Shell con el teclado, la pantalla, el sistema operativo y los programas de los usuarios.
+- Explicar cuándo y por qué las interfaces de línea de comandos deben ser usadas en lugar de interfaces gráficas.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What is a command shell and why would I use one?
+- ¿Qué es un Shell de comandos y por qué utilizaría uno?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Background
+### Información General
 
 Humans and computers commonly interact in many different ways, such as through a keyboard and mouse,
 touch screen interfaces, or using speech recognition systems.
