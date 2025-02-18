@@ -19,8 +19,8 @@ exercises: 0
 
 ### Información General
 
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse,
-touch screen interfaces, or using speech recognition systems.
+Los seres humanos y las computadoras suelen interactuar de muchas maneras diferentes, por ejemplo, a través de un teclado y un ratón, las interfaces de pantalla táctil
+o el uso de sistemas de reconocimiento de voz.
 The most widely used way to interact with personal computers is called a
 **graphical user interface** (GUI).
 With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
