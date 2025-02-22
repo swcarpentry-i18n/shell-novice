@@ -270,8 +270,7 @@ of the `ls` command and its options.
 
 ## Сторінки з інструкціями в Інтернеті
 
-Of course, there is a third way to access help for commands:
-searching the internet via your web browser.
+Звісно, є й третій спосіб отримати доступ до довідки для команд: пошук в інтернеті за допомогою веббраузера.
 Якщо ви скористаєтеся пошуком в Інтернеті, додання до запиту фрази `unix man page` дозволить отримати більш доречні результати.
 
 GNU provides links to its
