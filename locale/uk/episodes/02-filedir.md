@@ -343,8 +343,7 @@ possible to put hundreds of files in our home directory just as it's possible to
 pile hundreds of printed papers on our desk, it's much easier to find things when
 they've been organized into sensibly-named subdirectories.
 
-Now that we know the `shell-lesson-data` directory is located in our Desktop directory, we
-can do two things.
+Тепер, коли ми знаємо, що каталог `shell-lesson-data` знаходиться у каталозі Desktop, ми можемо зробити дві речі.
 
 По-перше, ми можемо переглянути його вміст, використовуючи ту ж стратегію, що і раніше, передавши ім'я каталогу в `ls`:
 
@@ -356,20 +355,17 @@ $ ls -F Desktop/shell-lesson-data
 exercise-data/  north-pacific-gyre/
 ```
 
-Second, we can actually change our location to a different directory, so
-we are no longer located in
-our home directory.
+По-друге, ми можемо змінити наше місцезнаходження на інший каталог, щоб ми більше не знаходилися в нашому домашньому каталозі.
 
 The command to change locations is `cd` followed by a
 directory name to change our working directory.
 `cd` означає 'змінити каталог' (англ. 'change directory'), що трохи вводить в оману.
-Команда не змінює каталог;
-вона змінює поточний робочий каталог терміналу.
-In other words it changes the shell's settings for what directory we are in.
-The `cd` command is akin to double-clicking a folder in a graphical interface
-to get into that folder.
+The command doesn't change the directory;
+it changes the shell's current working directory.
+Іншими словами, вона змінює налаштування терміналу щодо того, в якому каталозі ми знаходимося.
+Команда `cd` подібна до подвійного клацання по каталогу в графічному інтерфейсі, щоб потрапити до нього.
 
-Let's say we want to move into the `exercise-data` directory we saw above. Ми можемо скористатися наступною серією команд, щоб дістатися туди:
+Припустимо, нам треба перейти до каталогу `exercise-data`, який ми бачили вище. Ми можемо скористатися наступною серією команд, щоб дістатися туди:
 
 ```bash
 $ cd Desktop
@@ -377,15 +373,12 @@ $ cd shell-lesson-data
 $ cd exercise-data
 ```
 
-These commands will move us from our home directory into our Desktop directory, then into
-the `shell-lesson-data` directory, then into the `exercise-data` directory.
+Ці команди перемістять нас з домашнього каталогу до Desktop, потім до `shell-lesson-data`, а потім до `exercise-data`.
 Ви помітите, що команда `cd` нічого не виводить. Це нормально.
-Many shell commands will not output anything to the screen when successfully executed.
+Багато команд терміналу нічого не виводять на екран після успішного виконання.
 Але якщо ми виконаємо `pwd` після неї, то побачимо, що зараз ми знаходимося у `/Users/nelle/Desktop/shell-lesson-data/exercise-data`.
 
-If we run `ls -F` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/shell-lesson-data/exercise-data`,
-because that's where we now are:
+Тепер, якщо ми виконаємо команду `ls -F` без аргументів, вона виведе вміст `/Users/nelle/Desktop/shell-lesson-data/exercise-data`, тому що саме там ми зараз знаходимося:
 
 ```bash
 $ pwd
@@ -418,20 +411,15 @@ $ cd shell-lesson-data
 Але ми отримуємо помилку! Чому?
 
 With our methods so far,
-`cd` can only see sub-directories inside your current directory. There are
-different ways to see directories above your current location; we'll start
-with the simplest.
+`cd` can only see sub-directories inside your current directory. Існують різні способи перегляду батьківських каталогів; ми почнемо з найпростішого.
 
-There is a shortcut in the shell to move up one directory level. Це працює наступним чином:
+У терміналі є скорочення для переходу на один рівень каталогу вгору. Це працює наступним чином:
 
 ```bash
 $ cd ..
 ```
 
-`..` is a special directory name meaning
-"the directory containing this one",
-or more succinctly,
-the **parent** of the current directory.
+`..` - це спеціальне ім'я каталогу, що означає "каталог, що містить поточний", або більш стисло, **батько** поточного каталогу.
 Звичайно, якщо ми запустимо `pwd` після виконання `cd ..`, ми знову у `/Users/nelle/Desktop/shell-lesson-data`:
 
 ```bash
@@ -442,8 +430,7 @@ $ pwd
 /Users/nelle/Desktop/shell-lesson-data
 ```
 
-Спеціальний каталог `..` зазвичай не з'являється, коли ми запускаємо `ls`. If we want
-to display it, we can add the `-a` option to `ls -F`:
+Спеціальний каталог `..` зазвичай не з'являється, коли ми запускаємо `ls`. Якщо ми хочемо побачити його, ми можемо додати опцію `-a` до `ls -F`:
 
 ```bash
 $ ls -F -a
