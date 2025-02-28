@@ -264,9 +264,9 @@ Mandatory arguments to long options are mandatory for short options, too.
 When options exist as both short and long options:
 
 - Use the short option when typing commands directly into the
-  shell to minimize keystrokes and get your task done faster.
+ shell to minimize keystrokes and get your task done faster.
 - Use the long option in scripts to provide clarity.
-  It will be read many times and typed once.
+ It will be read many times and typed once.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -693,7 +693,7 @@ which is `/Users/nelle`?
 5. Yes: `~` stands for the user's home directory, in this case `/Users/nelle`.
 
 6. No: this command would navigate into a directory `home` in the current directory
-   if it exists.
+ if it exists.
 
 7. Yes: unnecessarily complicated, but correct.
 
@@ -726,7 +726,7 @@ what will `ls -F ../backup` display?
 1. No: there _is_ a directory `backup` in `/Users`.
 
 2. No: this is the content of `Users/thing/backup`,
-   but with `..`, we asked for one level further up.
+ but with `..`, we asked for one level further up.
 
 3. No: see previous explanation.
 
@@ -762,7 +762,7 @@ pnas_sub/ pnas_final/ original/
 1. No: `pwd` is not the name of a directory.
 
 2. Yes: `ls` without directory argument lists files and directories
-   in the current directory.
+ in the current directory.
 
 3. Yes: uses the absolute path explicitly.
 
@@ -923,3 +923,5 @@ and we will see it in many other tools as we go on.
 - `.` on its own means 'the current directory'; `..` means 'the directory above the current one'.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
