@@ -716,11 +716,11 @@ and _only_ the processed data files?
 2. This is the correct answer
 
 3. The shell would expand `*` to match everything in the current directory,
-   so the command would try to remove all matched files and an additional
-   file called `.txt`
+ so the command would try to remove all matched files and an additional
+ file called `.txt`
 
 4. The shell expands `*.*` to match all filenames containing at least one
-   `.`, including the processed files (`.txt`) _and_ raw files (`.dat`)
+ `.`, including the processed files (`.txt`) _and_ raw files (`.dat`)
 
 :::::::::::::::::::::::::
 
@@ -739,3 +739,5 @@ and _only_ the processed data files?
 - The best way to use the shell is to use pipes to combine simple single-purpose programs (filters).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
