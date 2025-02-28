@@ -227,7 +227,7 @@ Mandatory arguments to long options are mandatory for short options, too.
 
 - Використовуйте коротку під час введення команд безпосередньо в термінал, щоб мінімізувати натискання клавіш і швидше виконувати завдання.
 - Use the long option in scripts to provide clarity.
-  It will be read many times and typed once.
+ It will be read many times and typed once.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -655,7 +655,7 @@ pnas_sub/ pnas_final/ original/
 1. Ні: `pwd` не є назвою каталогу.
 
 2. Yes: `ls` without directory argument lists files and directories
-   in the current directory.
+ in the current directory.
 
 3. Yes: uses the absolute path explicitly.
 
@@ -804,3 +804,5 @@ and we will see it in many other tools as we go on.
 - `.` on its own means 'the current directory'; `..` means 'the directory above the current one'.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
