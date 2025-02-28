@@ -8,8 +8,8 @@ You need to download some files to follow this lesson.
 
 1. Download [shell-lesson-data.zip][zip-file] and move the file to your Desktop.
 2. Unzip/extract the file.
-   **Let your instructor know if you need help with this step**.
-   You should end up with a new folder called **`shell-lesson-data`** on your Desktop.
+  **Let your instructor know if you need help with this step**.
+  You should end up with a new folder called **`shell-lesson-data`** on your Desktop.
 
 ## Install software
 
@@ -21,9 +21,9 @@ If you do not already have the shell software installed, you will need to
 After installing the software
 
 3. Open a terminal.
-   If you're not sure how to open a terminal on your operating system, see the instructions below.
+  If you're not sure how to open a terminal on your operating system, see the instructions below.
 4. In the terminal type `cd` then press the <kbd>Return</kbd> key.
-   This step will make sure you start with your home folder as your working directory.
+  This step will make sure you start with your home folder as your working directory.
 
 In the lesson, you will find out how to access the data files in this folder.
 
@@ -112,3 +112,6 @@ you can run it by opening a terminal and typing `bash`.
 [gnome-terminal]: https://help.gnome.org/users/gnome-terminal/stable/
 [kde-konsole]: https://konsole.kde.org/
 [xterm]: https://en.wikipedia.org/wiki/Xterm
+
+
+
