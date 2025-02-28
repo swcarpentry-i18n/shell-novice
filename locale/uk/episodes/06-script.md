@@ -469,7 +469,7 @@ $ bash script.sh '*.pdb' 1 1
 Which of the following outputs would you expect to see?
 
 1. All of the lines between the first and the last lines of each file ending in `.pdb`
-   in the `alkanes` directory
+  in the `alkanes` directory
 2. The first and the last line of each file ending in `.pdb` in the `alkanes` directory
 3. The first and the last line of each file in the `alkanes` directory
 4. An error because of the quotes around `*.pdb`
@@ -654,3 +654,5 @@ an empty string.
 - Letting users decide what files to process is more flexible and more consistent with built-in Unix commands.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
