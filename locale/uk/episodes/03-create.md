@@ -236,8 +236,8 @@ $ touch my_file.txt
 ```
 
 1. Що зробила команда `touch`?
-   When you look at your current directory using the GUI file explorer,
-   does the file show up?
+ When you look at your current directory using the GUI file explorer,
+ does the file show up?
 
 2. Use `ls -l` to inspect the files.  How large is `my_file.txt`?
 
@@ -248,21 +248,21 @@ $ touch my_file.txt
 ## Solution
 
 1. The `touch` command generates a new file called `my_file.txt` in
-   your current directory.  You
-   can observe this newly generated file by typing `ls` at the
-   command line prompt.  `my_file.txt` can also be viewed in your
-   GUI file explorer.
+ your current directory.  You
+ can observe this newly generated file by typing `ls` at the
+ command line prompt.  `my_file.txt` can also be viewed in your
+ GUI file explorer.
 
 2. When you inspect the file with `ls -l`, note that the size of
-   `my_file.txt` is 0 bytes.  In other words, it contains no data.
-   If you open `my_file.txt` using your text editor it is blank.
+ `my_file.txt` is 0 bytes.  In other words, it contains no data.
+ If you open `my_file.txt` using your text editor it is blank.
 
 3. Some programs do not generate output files themselves, but
-   instead require that empty files have already been generated.
-   When the program is run, it searches for an existing file to
-   populate with its output.  The touch command allows you to
-   efficiently generate a blank text file to be used by such
-   programs.
+ instead require that empty files have already been generated.
+ When the program is run, it searches for an existing file to
+ populate with its output.  The touch command allows you to
+ efficiently generate a blank text file to be used by such
+ programs.
 
 :::::::::::::::::::::::::
 
@@ -499,14 +499,14 @@ correct the mistake, which of the following commands could you use to do so?
 ## Solution
 
 1. No.  While this would create a file with the correct name,
-   the incorrectly named file still exists in the directory
-   and would need to be deleted.
+ the incorrectly named file still exists in the directory
+ and would need to be deleted.
 2. Yes, this would work to rename the file.
 3. No, the period(.) indicates where to move the file, but does not provide a new file name;
-   identical file names
-   cannot be created.
+ identical file names
+ cannot be created.
 4. No, the period(.) indicates where to copy the file, but does not provide a new file name;
-   identical file names cannot be created.
+ identical file names cannot be created.
 
 :::::::::::::::::::::::::
 
