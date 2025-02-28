@@ -69,3 +69,6 @@ from Dalton Hubble
 covers tips, tricks, and how to avoid dangers.
 
 [bash-demystified]: https://blog.dghubble.io/posts/.bashprofile-.profile-and-.bashrc-conventions/
+
+
+
