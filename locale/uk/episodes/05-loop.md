@@ -351,11 +351,11 @@ done
 ```
 
 1. Prints `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb` and
-   `propane.pdb`, and the text from `propane.pdb` will be saved to a file called `alkanes.pdb`.
+  `propane.pdb`, and the text from `propane.pdb` will be saved to a file called `alkanes.pdb`.
 2. Prints `cubane.pdb`, `ethane.pdb`, and `methane.pdb`, and the text from all three files
-   would be concatenated and saved to a file called `alkanes.pdb`.
+  would be concatenated and saved to a file called `alkanes.pdb`.
 3. Prints `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, and `pentane.pdb`,
-   and the text from `propane.pdb` will be saved to a file called `alkanes.pdb`.
+  and the text from `propane.pdb` will be saved to a file called `alkanes.pdb`.
 4. None of the above.
 
 :::::::::::::::  solution
@@ -363,9 +363,9 @@ done
 ## Solution
 
 1. The text from each file in turn gets written to the `alkanes.pdb` file.
-   However, the file gets overwritten on each loop iteration, so the final content of
-   `alkanes.pdb`
-   is the text from the `propane.pdb` file.
+  However, the file gets overwritten on each loop iteration, so the final content of
+  `alkanes.pdb`
+  is the text from the `propane.pdb` file.
 
 :::::::::::::::::::::::::
 
@@ -386,12 +386,12 @@ done
 ```
 
 1. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, and
-   `pentane.pdb` would be concatenated and saved to a file called `all.pdb`.
+  `pentane.pdb` would be concatenated and saved to a file called `all.pdb`.
 2. The text from `ethane.pdb` will be saved to a file called `all.pdb`.
 3. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
-   and `propane.pdb` would be concatenated and saved to a file called `all.pdb`.
+  and `propane.pdb` would be concatenated and saved to a file called `all.pdb`.
 4. All of the text from `cubane.pdb`, `ethane.pdb`, `methane.pdb`, `octane.pdb`, `pentane.pdb`
-   and `propane.pdb` would be printed to the screen and saved to a file called `all.pdb`.
+  and `propane.pdb` would be printed to the screen and saved to a file called `all.pdb`.
 
 :::::::::::::::  solution
 
@@ -844,3 +844,5 @@ Try running the code for yourself to see which directories are created!
 - Use `history` to display recent commands, and `![number]` to repeat a command by number.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
