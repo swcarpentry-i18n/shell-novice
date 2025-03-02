@@ -2,14 +2,11 @@
 site: sandpaper::sandpaper_site
 ---
 
-Термінал Unix був створений ще до того, як народилась більшість його користувачів. It has survived because it's a powerful tool that
-allows users to perform complex and powerful tasks, often with just
-a few keystrokes or lines of code. It helps users automate repetitive
+Термінал Unix був створений ще до того, як народилась більшість його користувачів. Він все ще широко використовується, тому що це високопродуктивний інструмент, який дозволяє користувачам виконувати складні та потужні завдання, часто за допомогою лише кількох натискань клавіш або кількох рядків коду. It helps users automate repetitive
 tasks and easily combine smaller tasks into larger, more powerful workflows.
 
 Use of the shell is fundamental to a wide range of advanced computing
-tasks, including high-performance computing. These lessons will introduce
-you to this powerful tool.
+tasks, including high-performance computing. Цей урок познайомить вас з цим потужним інструментом.
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
