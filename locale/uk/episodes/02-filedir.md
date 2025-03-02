@@ -336,10 +336,7 @@ the [setup for this lesson](../learners/setup.md). (On most systems, the
 contents of the `Desktop` directory in the shell will show up as icons in a graphical
 user interface behind all the open windows. Подивіться, чи це ваш випадок.)
 
-Ієрархічна організація речей таким чином допомагає нам відстежувати нашу роботу. While it's
-possible to put hundreds of files in our home directory just as it's possible to
-pile hundreds of printed papers on our desk, it's much easier to find things when
-they've been organized into sensibly-named subdirectories.
+Ієрархічна організація речей таким чином допомагає нам відстежувати нашу роботу. Хоча у нашому домашньому каталозі можна зберігати сотні файлів, так само як і сотні паперових документів на робочому столі, набагато легше знаходити речі, коли вони організовані у підкаталоги з розумними назвами.
 
 Тепер, коли ми знаємо, що каталог `shell-lesson-data` знаходиться у каталозі Desktop, ми можемо зробити дві речі.
 
